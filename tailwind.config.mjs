@@ -13,14 +13,16 @@ module.exports = {
       DM: ["DM Serif Display", "serif"],
       Public: ["Public Sans", "sans-serif"],
     },
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+    screens: {
+      sm: { min: "359px", max: "759px" },
+      md: { min: "760px", max: "1290px" },
+      xl: { min: "1291px", max: "1441px" },
+    },
+    extend: {
+      boxShadow: {
+        "3xl": "10px 10px 25px -10px rgba(54, 83, 107, 0.25)",
       },
     },
-    extend: {},
   },
   plugins: [require("tailwindcss-animate")],
 };
